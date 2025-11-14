@@ -1,0 +1,22 @@
+/* Contact page specific styles */
+
+/* Caso não existam estilos específicos no style.css principal, adicionar aqui */
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

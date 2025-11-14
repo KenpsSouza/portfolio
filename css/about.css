@@ -1,0 +1,14 @@
+/* About page specific styles */
+
+/* Caso não existam estilos específicos no style.css principal, adicionar aqui */
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
