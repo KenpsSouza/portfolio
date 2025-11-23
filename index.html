@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kenps Souza | Desenvolvedor Full Stack</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/landing.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
+  
   <header>
     <nav>
-      <a href="#home" class="logo">Kenps</a>
+      <a href="#home" class="logo">
+        <img src="assets/images/klogo.png" alt="Kenps Logo">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">Sobre</a></li>
@@ -26,64 +32,63 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+
     <section id="home" class="hero">
       <div class="bg-animation"></div>
       <div class="hero-content">
-        <div class="hero-title-container">
+        <div class="hero-left">
           <div class="hero-image">
             <img src="assets/images/euia.png" alt="Kenps Souza" class="hero-profile-img">
           </div>
-          <h1>Kenps Souza</h1>
         </div>
-        <a href="#projects" class="cta-button">
-          Ver Projetos
-          <span>→</span>
-        </a>
+        <div class="hero-right">
+          <h1>Kenps Souza</h1>
+          <a href="#projects" class="cta-button">
+            Ver Projetos
+            <span>→</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section fade-in">
       <h2 class="section-title">Sobre Mim</h2>
-      <p class="section-subtitle">
-        Transformo ideias em experiências digitais excepcionais
-      </p>
-      <div style="display: flex; flex-direction: row-reverse; align-items: center; gap: 40px;">
-        <!-- Avatar -->
-        <div class="avatar" style="flex-shrink: 0;">
-          <div style="width: 350px; height: 350px; display: flex; align-items: center; justify-content: center;">
-            <img src="assets/images/gif_apresent_540.gif" alt="Octocat Portfolio" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+      <p class="section-subtitle">Transformo ideias em experiências digitais</p>
+      <div class="about-container">
+        <div class="about-avatar">
+          <div class="avatar-wrapper">
+            <img src="assets/images/gif_apresent_540.gif" alt="Octocat Portfolio">
           </div>
         </div>
-
-        <!-- Texto -->
-        <div class="about-text" style="flex: 1;">
+        <div class="about-text">
           <h3>Olá, eu sou Kenps!</h3>
           <p>
-            Sou um desenvolvedor apaixonado por tecnologia e inovação, com experiência em desenvolvimento 
-            full stack e design de interfaces. Trabalho criando soluções digitais que combinam 
-            funcionalidade e estética.
+            <i>
+              Sou estudante em transição da área jurídica para a tecnologia, cursando Técnico em
+              Desenvolvimento de Sistemas no SENAI e Bacharelado em Engenharia da Computação na UNIVESP.
+            </i>
           </p>
           <p>
-            Minha jornada na programação começou com curiosidade e evoluiu para uma paixão por 
-            resolver problemas complexos através do código. Sempre busco aprender novas tecnologias 
-            e metodologias para entregar os melhores resultados.
+            <i>
+              Combino o aprendizado analítico adquirido no Direito com minha paixão por soluções digitais,
+              unindo raciocínio crítico, atenção aos detalhes e capacidade de resolver problemas às práticas
+              de desenvolvimento que venho aprofundando nos projetos do curso técnico e da graduação.
+            </i>
           </p>
           <p>
-            Quando não estou codificando, gosto de explorar novas tendências em design, 
-            contribuir para projetos open source e compartilhar conhecimento com a comunidade.
+            <i>
+              Aplico no dia a dia conhecimentos de programação, lógica, desenvolvimento web e fundamentos
+              de engenharia de software, sempre buscando evoluir como profissional e criar soluções
+              funcionais, bem estruturadas e alinhadas às necessidades reais das pessoas e organizações.
+            </i>
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section fade-in">
       <h2 class="section-title">Habilidades</h2>
-      <p class="section-subtitle">
-        Tecnologias e ferramentas
-      </p>
+      <p class="section-subtitle">Tecnologias, ferramentas e competências</p>
       <div class="skills-grid">
         <div class="skill-card">
           <div class="skill-icon">⚛️</div>
@@ -103,138 +108,154 @@
         <div class="skill-card">
           <div class="skill-icon">🎨</div>
           <h3>Design</h3>
-          <p>Figma </p>
+          <p>Figma</p>
+        </div>
+      </div>
+      <div class="skills-grid skills-grid-soft">
+        <div class="skill-card">
+          <div class="skill-icon">🌱</div>
+          <h3>Comunicação e Trabalho em Equipe</h3>
+          <p>Capacidade de transmitir ideias de forma clara e colaborar eficazmente para alcançar objetivos comuns.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🧠</div>
+          <h3>Resolução de Problemas</h3>
+          <p>Habilidade de analisar desafios e propor soluções criativas e eficazes.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          <h3>Pensamento Analítico</h3>
+          <p>Capacidade de avaliar informações e tomar decisões estratégicas com base em dados.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Proatividade</h3>
+          <p>Iniciativa para agir e buscar soluções antes de problemas surgirem, garantindo eficiência.</p>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+
     <section id="projects" class="section fade-in">
       <h2 class="section-title">Projetos</h2>
-      <p class="section-subtitle">
-        Alguns dos meus trabalhos mais recentes
-      </p>
+      <p class="section-subtitle">Alguns dos meus projetos</p>
       <div class="projects-grid">
-        <!-- Projeto 1: E-commerce Platform -->
         <div class="project-card">
-          <div class="project-image">🌐</div>
-          <div class="project-content">
-            <h3 class="project-title">E-commerce Platform</h3>
-            <p class="project-description">
-              Plataforma completa de e-commerce com painel administrativo, 
-              sistema de pagamentos e gestão de estoque.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Stripe</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link">Demo</a>
-              <a href="#" class="project-link">GitHub</a>
-            </div>
+          <div class="project-image">
+            <img src="assets/images/printpjg.png" alt="Print do projeto PetGuardian Frontend">
           </div>
-        </div>
-
-        <!-- Projeto 2: Task Management App -->
-        <div class="project-card">
-          <div class="project-image">📱</div>
           <div class="project-content">
-            <h3 class="project-title">Task Management App</h3>
+            <h3 class="project-title">PetGuardian — Frontend (Angular)</h3>
             <p class="project-description">
-              Aplicativo mobile de gerenciamento de tarefas com sincronização 
-              em tempo real e interface intuitiva.
+              Aplicação Angular para cadastro e gerenciamento de animais resgatados e adotantes (Projeto Integrador Univesp).
             </p>
             <div class="project-tech">
-              <span class="tech-tag">React Native</span>
-              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Angular</span>
               <span class="tech-tag">TypeScript</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">Demo</a>
-              <a href="#" class="project-link">GitHub</a>
+              <a href="https://github.com/KenpsSouza/Frontend-Angular-PET-GUARDIAN" class="project-link">GitHub</a>
             </div>
           </div>
         </div>
-
-        <!-- Projeto 3: Portfolio Website -->
         <div class="project-card">
-          <div class="project-image">🎨</div>
+          <div class="project-image">
+            <img src="assets/images/printapi.png" alt="Print do projeto Radar API">
+          </div>
           <div class="project-content">
-            <h3 class="project-title">Portfolio Website</h3>
+            <h3 class="project-title">Radar — API<br>(ASP.NET Core / C#)</h3>
             <p class="project-description">
-              Website responsivo com animações suaves e design moderno 
-              para showcase de projetos criativos.
+              API em ASP.NET Core — controle de produtos, clientes, lojas; autenticação JWT e integrações (CEP, Google Maps).
             </p>
             <div class="project-tech">
-              <span class="tech-tag">Vue.js</span>
-              <span class="tech-tag">GSAP</span>
-              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">ASP.NET Core</span>
+              <span class="tech-tag">SQL Server</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">Demo</a>
-              <a href="#" class="project-link">GitHub</a>
+              <a href="https://github.com/KenpsSouza/Backend-JS-PET-GUARDIAN" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/printppg1.png" alt="Print do projeto PetGuardian Backend">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">PetGuardian — Backend (Node.js)</h3>
+            <p class="project-description">
+              Servidor Node.js + Express com rotas para gerenciamento de adotantes e animais (MySQL).
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/BG2JKW/Radar_Api" class="project-link">GitHub</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Redes e Contato -->
-    <section id="redes-contato" class="section fade-in" style="padding: 80px 0;">
-      <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;">
-        <!-- Avatar -->
-        <div class="avatar" style="flex-shrink: 0;">
-          <div style="width: 350px; height: 350px; margin-left: 60px; display: flex; align-items: center; justify-content: center;">
-            <img src="assets/images/gif_redes_540.gif" alt="Octocat Portfolio" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+    <section id="redes-contato" class="section fade-in redes-contato-section">
+      <div class="redes-contato-container">
+        <div class="redes-avatar">
+          <div class="redes-avatar-wrapper">
+            <img src="assets/images/gif_redes_540.gif" alt="Octocat Portfolio">
           </div>
         </div>
 
-        <!-- Redes -->
-        <div class="redes" style="flex: 1;">
-          <h2 style="font-size: 1.9rem; margin: 20px; color: var(--accent-color); text-align: center;">Minhas Redes</h2>
-          <div style="display: flex; flex-direction: column; gap: 25px;">
-            <a href="https://www.instagram.com/kenps.souza" style="display: flex; align-items: center; gap: 15px; padding: 15px 25px; background: var(--primary-bg); border: 1px solid var(--border-color); border-radius: 15px; color: var(--text-primary); text-decoration: none; transition: all 0.3s ease; font-size: 1.1rem;">
+        <div class="redes">
+          <h2 class="redes-title">Minhas Redes</h2>
+          <div class="redes-links">
+            <a href="https://www.instagram.com/kenps.souza" class="rede-link">
               <img src="assets/images/instagram.png" alt="Instagram" width="40" />
-              <span style="font-weight: 600;">Instagram</span>
+              <span>Instagram</span>
             </a>
-            <a href="https://github.com/KenpsSouza" target="_blank" style="display: flex; align-items: center; gap: 15px; padding: 15px 25px; background: var(--primary-bg); border: 1px solid var(--border-color); border-radius: 15px; color: var(--text-primary); text-decoration: none; transition: all 0.3s ease; font-size: 1.1rem;">
+            <a href="https://github.com/KenpsSouza" target="_blank" class="rede-link">
               <img src="assets/images/github.png" alt="GitHub" width="35" />
-              <span style="font-weight: 600;">GitHub</span>
+              <span>GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/kenps-dev-adv/" target="_blank" style="display: flex; align-items: center; gap: 15px; padding: 15px 25px; background: var(--primary-bg); border: 1px solid var(--border-color); border-radius: 15px; color: var(--text-primary); text-decoration: none; transition: all 0.3s ease; font-size: 1.1rem;">
+            <a href="https://www.linkedin.com/in/kenps-dev-adv/" target="_blank" class="rede-link">
               <img src="assets/images/linkedin.png" alt="LinkedIn" width="40" />
-              <span style="font-weight: 600;">LinkedIn</span>
+              <span>LinkedIn</span>
             </a>
           </div>
         </div>
 
-        <!-- Contato -->
-        <div class="contato" style="flex: 1;">
-          <h2 style="font-size: 1.8rem; margin: 20px 0; color: var(--accent-color); text-align: center;">Entre em Contato</h2>
-          <div class="contact-info" style="display: flex; flex-direction: column; gap: 45px;">
-
-            <div class="contact-item" style="display: flex; align-items: center; gap: 15px;">
-              <div style="width: 50px; height: 50px; background: var(--gradient); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">📧</div>
-              <div>
-                <h4 style="color: var(--accent-color); margin-bottom: 5px;">Email</h4>
-                <p style="color: var(--text-secondary);">kenpsrossi@gmail.com</p>
-              </div>
+        <div class="contato">
+          <h2 class="contato-title">Entre em Contato</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <a href="mailto:kenpsrossi@gmail.com">
+                <div class="contact-icon">📧</div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>kenpsrossi@gmail.com</p>
+                </div>
+              </a>
             </div>
-            <div class="contact-item" style="display: flex; align-items: center; gap: 15px;">
-              <div style="width: 50px; height: 50px; background: var(--gradient); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">📱</div>
-              <div>
-                <h4 style="color: var(--accent-color); margin-bottom: 5px;">Telefone</h4>
-                <p style="color: var(--text-secondary);">(11) 989601669</p>
-              </div>
+            <div class="contact-item">
+              <a href="tel:+5511989601669">
+                <div class="contact-icon">📱</div>
+                <div class="contact-text">
+                  <h4>Telefone</h4>
+                  <p>(11) 989601669</p>
+                </div>
+              </a>
             </div>
-            <div class="contact-item" style="display: flex; align-items: center; gap: 15px;">
-              <div style="width: 50px; height: 50px; background: var(--gradient); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">📍</div>
-              <div>
-                <h4 style="color: var(--accent-color); margin-bottom: 5px;">Localização</h4>
-                <p style="color: var(--text-secondary);">São Paulo, Brasil</p>
-              </div>
+            <div class="contact-item">
+              <a href="https://www.google.com/maps?q=São+Paulo,+Brasil" target="_blank">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <h4>Localização</h4>
+                  <p>São Paulo, Brasil</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -243,13 +264,12 @@
 
   </main>
 
-  <!-- Footer -->
   <footer>
+    <div class="footer-content">
       <p>&copy; 2025 Kenps Souza. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
